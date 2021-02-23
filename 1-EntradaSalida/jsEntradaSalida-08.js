@@ -26,3 +26,5 @@ function SacarResto()
 	//Mostrar
 	alert("El resultado del resto es: "+resultadoResto);
 }
+
+

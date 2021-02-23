@@ -1,6 +1,23 @@
+/*Al ingresar una edad solo debemos informar 
+si la persona NO es adolescente.*/
+
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	//Declaraciones
+	var edad;
+	var edadPar;
 
-}//FIN DE LA FUNCIÓN
+	//Asignaciones
+	edad = txtIdEdad.value;
+
+	//Transformaciones
+	edadPar = parseInt (edad);
+
+	//Condición
+	if (edadPar >= 13 && edadPar <= 17){}
+
+	else 
+	{
+		alert ("Usted no es adolescente.");
+	}
+}

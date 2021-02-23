@@ -7,8 +7,8 @@ function mostrar()
 	
 	nombreIngresado=txtIdNombre.value;
 	
+	//Tambien podemos usar document.getElementById("aca copiamos del html").value
+
 	alert("Tu nombre es: "+nombreIngresado);
 
 }
-
-

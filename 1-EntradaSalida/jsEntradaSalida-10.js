@@ -10,17 +10,20 @@ function mostrarAumento()
 	var datoDescuento;
 	var datoImportePar;
 	var resultadoDescuento;
+	var resultadoConDescuento;
 
 	//Asignaciones
 	datoImporte = txtIdImporte.value;
-	datoDescuento = 0.25;
+	datoDescuento = 25;
 
 	//Transformación
 	datoImportePar = parseInt (datoImporte);
 
 	//Descuento
-	resultadoDescuento = datoImportePar -(datoImportePar * datoDescuento);
+	resultadoDescuento = (datoImportePar * datoDescuento) / 100;
+	resultadoConDescuento = datoImportePar - resultadoDescuento;
 
 	//Mostrar
-	txtIdResultado.value = resultadoDescuento;
+	txtIdResultado.value = resultadoConDescuento;
 }
+

@@ -10,17 +10,19 @@ function mostrarAumento()
 	var datoAumento;
 	var datoSueldoPar;
 	var resultadoAumento;
+	var resultadoSueldoAumento;
 
 	//Asignaciones
 	datoSueldo = txtIdSueldo.value;
-	datoAumento = 1.10;
+	datoAumento = 10;
 	
 	//Transformación
 	datoSueldoPar = parseInt (datoSueldo);
 
 	//Aumento
-	resultadoAumento = (datoSueldoPar * datoAumento);
+	resultadoAumento = (datoSueldoPar * datoAumento) / 100;
+	resultadoSueldoAumento = datoSueldoPar + resultadoAumento;
 
 	//Mostrar
-	txtIdResultado.value = resultadoAumento;
+	txtIdResultado.value = resultadoSueldoAumento;
 }
