@@ -14,3 +14,5 @@ function mostrar()
 
 	txtIdSexo.value=sexoIngresado;
 }//FIN DE LA FUNCIÓN
+
+//podemos usar toLowerCase() para transformar todos los caracteres en minuscula

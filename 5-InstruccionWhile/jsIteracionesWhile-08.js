@@ -1,6 +1,8 @@
 /*
 Al presionar el botón pedir  números  hasta que el usuario quiera,
-sumar los que son positivos y multiplicar los negativos.*/
+sumar los que son positivos y multiplicar los negativos.
+Ariel Nuñez - Ejercicio 8
+*/
 function mostrar()
 {
 	var contador;
@@ -12,26 +14,24 @@ function mostrar()
 	contador=0;
 	sumaPositivos=0;
 	multiplicacionNegativos=1;
-	respuesta='si';
+	respuesta = true;
 
-	while (respuesta == "si")
+	while (respuesta)
 	{
 		numeroIngresado = prompt ("Ingrese un número");
 		numeroIngresado = parseInt (numeroIngresado);
-		while (numeroIngresado >= 0) 
+		if (numeroIngresado >= 0) 
 		{
 			sumaPositivos = sumaPositivos + numeroIngresado;
-			respuesta = prompt ("Desea continuar?")
 		}
 
-		while (numeroIngresado < 0) 
+		if (numeroIngresado < 0) 
 		{
 			multiplicacionNegativos = multiplicacionNegativos * numeroIngresado;
 		}
 
-		respuesta = prompt ("Desea continuar?")
+		respuesta = confirm ("Continuar?")
 	}
-
 
 	txtIdSuma.value=sumaPositivos;
 	txtIdProducto.value=multiplicacionNegativos;
