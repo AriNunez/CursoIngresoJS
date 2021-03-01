@@ -9,25 +9,34 @@ hasta que el usuario quiera, mostrar:
 6-Cantidad de números pares.
 7-Promedio de positivos.
 8-Promedios de negativos.
-9-Diferencia entre positivos y negativos, (positvos-negativos). */
+9-Diferencia entre positivos y negativos, (positvos-negativos). 
+
+Ariel Nuñez-Ejercicio 10
+*/
 function mostrar()
 {
-	//declarar contadores y variables 
+	
 	var respuesta;
 	var numeroIngresado;
-	var sumaNegativos=0;
-	var sumaPositivos=0;
-	var contadorPositivos=0;
-	var contadorNegativos=0;
-	var cantidadCeros=0;
-	var cantidadPares=0;
+	var sumaNegativos;
+	var sumaPositivos;
+	var contadorPositivos;
+	var contadorNegativos;
+	var cantidadCeros;
+	var cantidadPares;
 	var resultado;
 	var promedioPositivos;
 	var promedioNegativos;
 	var resultadoSumaResta;
-
+	var resultadoResto;
 
 	respuesta=true;
+	sumaNegativos=0;
+	sumaPositivos=0;
+	contadorPositivos=0;
+	contadorNegativos=0;
+	cantidadCeros=0;
+	cantidadPares=0;
 
 	do
 	{
@@ -56,29 +65,28 @@ function mostrar()
 				}
 				else
 				{
-					if (condition) {
-						
-					}
+					alert ("El dato ingresado no es válido.");
 				}
 			}
 		}
 
-		cantidadPares = //FIJARSE ESTO
+		resultadoResto = numeroIngresado % 2;
+		if (resultadoResto == 0) 
+		{
+			cantidadPares++;
+		}
+		
 		respuesta=confirm("Desea continuar?");
 	
-	}while (respuesta);//fin del while
+	}while (respuesta);
 
 	promedioNegativos = sumaNegativos / contadorNegativos;
 	promedioPositivos = sumaPositivos / contadorPositivos;
-	resultadoSumaResta = sumaPositivos - sumaNegativos;//AGREGAR AL DOCUMENT
-
-
+	resultadoSumaResta = sumaPositivos + sumaNegativos;
 
 	document.write("La suma de negativos es :"+sumaNegativos+". El promedio de los números negativos sumados es: "+promedioNegativos+
-	". La suma de positivos es: "+sumaPositivos+ ". El promedio de los positivos sumados es: "+promedioPositivos+
+	". La suma de positivos es: "+sumaPositivos+ ". El promedio de los positivos sumados es: "+promedioPositivos+". La diferencia entre positivos y negativos es: "+resultadoSumaResta+
 	". La cantidad de números negativos es: "+contadorNegativos+". La cantidad de números positivos es: "+contadorPositivos+
-	". La cantidad de ceros es: "+cantidadCeros);
+	". La cantidad de ceros ingresados es: "+cantidadCeros+". La cantidad de números pares ingresados es: "+cantidadPares);
 
-	//para los pares podemos usar el operador moludo %, nos podemos dar cuenta por el resto, si es par tiene que dar resto 0
-	//ingresar validacion de caracteres no validos para el caso de queres ingresar letras.
 }//FIN DE LA FUNCIÓN

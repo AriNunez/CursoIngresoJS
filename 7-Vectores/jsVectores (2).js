@@ -1,5 +1,18 @@
 function mostrar()
 {
+	var arrayNombres;
+
+	arrayNombres = ["Juan","Luis","Maria","Nahuel","Jose"];
+
+	console.log (arrayNombres);
+	alert (arrayNombres);
+}
+
+
+
+
+
+/*{
 
 	var miArray = new Array();
 
@@ -22,4 +35,4 @@ document.write("El contenido del vector es: <br>");
 
 
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN*/

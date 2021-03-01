@@ -1,5 +1,24 @@
 function mostrar()
 {
+	var arrayNumeros;
+	var numeroIngresado;
+	var sumaArray=0;
+
+	arrayNumeros = [];
+
+	for(i=0;i<5;i++)
+	{
+		numeroIngresado = parseInt(prompt("Ingrese un número"));
+		arrayNumeros.push(numeroIngresado);
+		sumaArray += arrayNumeros[i];
+	}
+
+	alert (sumaArray);
+}
+
+
+
+/*{
 
 	var miArray = new Array();
 	var acum=0;
@@ -25,4 +44,4 @@ function mostrar()
 
 
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN*/

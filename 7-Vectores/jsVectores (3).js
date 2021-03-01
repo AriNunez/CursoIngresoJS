@@ -1,5 +1,30 @@
+
+//array en for
 function mostrar()
 {
+	var arrayNumeros;
+	var numeroIngresado;
+
+	arrayNumeros =[];
+	
+	for(i=0 ; i<5; i++)
+	{
+		numeroIngresado = parseInt(prompt ("Ingrese un número"));
+		arrayNumeros.push (numeroIngresado);
+	}
+
+	for (i=0 ; i<arrayNumeros.length ; i++)
+	{
+		alert (arrayNumeros[i]);
+	}
+}
+
+//array en while
+
+
+
+
+/*{
 
 	var miArray = new Array();
 
@@ -20,4 +45,4 @@ function mostrar()
 
 
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN*/

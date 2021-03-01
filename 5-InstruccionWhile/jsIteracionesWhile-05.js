@@ -10,6 +10,7 @@ function mostrar()
 	while (!(sexoIngresado =="f" || sexoIngresado == "m"))
 	{
 		sexoIngresado = prompt("ingrese f ó m .");
+		sexoIngresado =sexoIngresado.toLowerCase(sexoIngresado);
 	}
 
 	txtIdSexo.value=sexoIngresado;
